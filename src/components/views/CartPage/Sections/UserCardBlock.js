@@ -1,4 +1,5 @@
 import React from 'react'
+const URL = require('../../../../config/key').URL;
 
 function UserCardBlock(props) {
 
@@ -7,7 +8,7 @@ function UserCardBlock(props) {
     const renderCartImage = (images) => {
         if(images.length > 0) {
             let image = images[0]
-            return `http://localhost:5000/${image}`
+            return `${URL}/${image}`
         }
     }
 

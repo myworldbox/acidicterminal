@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import ImageGallery from 'react-image-gallery';
+const URL = require('../../../../config/key').URL;
 
 function ProductImage(props) {
     const [Images, setImages] = useState([])
@@ -10,8 +11,8 @@ function ProductImage(props) {
 
             props.detail.images && props.detail.images.map(item => {
                 images.push({
-                    original: `http://localhost:5000/${item}`,
-                    thumbnail: `http://localhost:5000/${item}`
+                    original: `${URL}/${item}`,
+                    thumbnail: `${URL}/${item}`
                 })
             })
             setImages(images)
