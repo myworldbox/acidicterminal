@@ -1,3 +1,3 @@
 module.exports = { 
-    URL: 'http://localhost:5000' || 'https://acidictermerminal.vercel.app'
+    URL: 'https://acidictermerminal.vercel.app' || 'http://localhost:5000'
 };
